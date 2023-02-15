@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/generateJoke.js":
-/*!*****************************!*\
-  !*** ./src/generateJoke.js ***!
-  \*****************************/
+/***/ "./src/javascript/generateJoke.js":
+/*!****************************************!*\
+  !*** ./src/javascript/generateJoke.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4654,20 +4654,30 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _generateJoke__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generateJoke */ "./src/generateJoke.js");
+/* harmony import */ var _javascript_generateJoke__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./javascript/generateJoke */ "./src/javascript/generateJoke.js");
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _assets_Laugh_Cry_Emoji_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/Laugh Cry Emoji.png */ "./src/assets/Laugh Cry Emoji.png");
+// Import JavaScript
 
 
+// Import CSS
 
+
+// Import Assets / Images ...
+
+
+// Check Setup Connection
 console.log("Connected Webpack Server");
+
+// Assign Image Source for <img> in DOM
 var laughImg = document.getElementById("laughImg");
 laughImg.src = _assets_Laugh_Cry_Emoji_png__WEBPACK_IMPORTED_MODULE_2__;
 var jokeBtn = document.getElementById("jokeBtn");
-jokeBtn.addEventListener("click", _generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"]);
-(0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])();
+jokeBtn.addEventListener("click", _javascript_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+// generateJoke();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle8d87270e075a6c5bf357.js.map
+//# sourceMappingURL=bundle1a0dc04d0f818709d923.js.map
