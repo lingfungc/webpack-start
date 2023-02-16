@@ -13,8 +13,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
+// Import API Axios for Dad's Joke
 
 function generateJoke() {
+  // Set AxiosHeaders "content-type" as "application/json"
   var config = {
     headers: {
       Accept: "application/json"
@@ -22,8 +24,12 @@ function generateJoke() {
   };
   axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("https://icanhazdadjoke.com", config).then(function (res) {
     document.getElementById("joke").innerHTML = res.data.joke;
+    // More Details of API Axios in Browser's Console
+    console.log(res);
   });
 }
+
+// Export generateJoke() Function to "index.js"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);
 
 /***/ }),
@@ -4660,7 +4666,7 @@ __webpack_require__.r(__webpack_exports__);
 // Import JavaScript
 
 
-// Import CSS
+// Import SCSS
 
 
 // Import Assets / Images ...
@@ -4672,12 +4678,15 @@ console.log("Connected Webpack Server");
 // Assign Image Source for <img> in DOM
 var laughImg = document.getElementById("laughImg");
 laughImg.src = _assets_Laugh_Cry_Emoji_png__WEBPACK_IMPORTED_MODULE_2__;
+
+// Fetch jokeBtn from DOM and Add "click" Event to Generate Joke
 var jokeBtn = document.getElementById("jokeBtn");
 jokeBtn.addEventListener("click", _javascript_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
-// generateJoke();
+// Call "generateJoke()" to Get the First Joke
+(0,_javascript_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle1a0dc04d0f818709d923.js.map
+//# sourceMappingURL=bundle4c1021d29d4c2db54d12.js.map
