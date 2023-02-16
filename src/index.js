@@ -1,7 +1,7 @@
 // Import JavaScript
 import generateJoke from "./javascript/generateJoke";
 
-// Import CSS
+// Import SCSS
 import "./styles/main.scss";
 
 // Import Assets / Images ...
